@@ -1,5 +1,5 @@
 import React from 'react'
-import {Map, TileLayer, FeatureGroup} from 'react-leaflet'
+import {Map, TileLayer} from 'react-leaflet'
 import ReactLeafletMultiOptionsPolyline from '../../src'
 
 export default class DataMap extends React.Component {
@@ -23,19 +23,17 @@ export default class DataMap extends React.Component {
           'Imagery © <a href="http://mapbox.com">Mapbox</a>'}
           url='https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYW5hcGFsdmVzIiwiYSI6ImNpcHIxcDRzajAwNzJpZW5idHNucnZjY2gifQ.vMgJ5qWfBiKa_R-hmuuO0w'
         />
-        <FeatureGroup>
-          <ReactLeafletMultiOptionsPolyline
-            ref={this.ref}
-            positions={this.props.positions}
-            optionIdxFn={this.props.optionIdxFn}
-            options={this.props.options}
-            weight={5}
-            lineCap='butt'
-            opacity={0.75}
-            smoothFactor={1}
-            zoomAnimation={false}
-          />
-        </FeatureGroup>
+        <ReactLeafletMultiOptionsPolyline
+          ref={this.ref}
+          positions={this.props.positions}
+          optionIdxFn={this.props.optionIdxFn}
+          options={this.props.options}
+          weight={5}
+          lineCap='butt'
+          opacity={0.75}
+          smoothFactor={1}
+          zoomAnimation={false}
+        />
       </Map>
     )
   }
