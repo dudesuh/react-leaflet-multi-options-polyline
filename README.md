@@ -27,7 +27,9 @@ export default class DataMap extends React.Component {
   
   render () {
     return (
-      <Map onMoveEnds={() => this.setState({bounds: null})} onZoomEnd={() => this.setState({bounds: null})} zoom={5} center={[38.729412, -9.139263]} maxZoom={18} bounds={this.state.bounds} id='mapTrips' style={{height: '40%'}} >
+      <Map onMoveEnds={() => this.setState({bounds: null})} onZoomEnd={() => this.setState({bounds: null})}
+        zoom={5} center={[38.729412, -9.139263]} maxZoom={18} bounds={this.state.bounds} id='mapTrips'
+        style={{height: '40%'}} >
         <TileLayer
           maxZoom={18}
           attribution={'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
