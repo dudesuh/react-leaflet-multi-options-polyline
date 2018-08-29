@@ -1,10 +1,11 @@
 {
   "name": "react-leaflet-multi-options-polyline",
-  "version": "1.0.0",
-  "description": "Provides a component to enable multiple styles for a polyline in a react-leaflet map.",
+  "version": "1.0.1",
+  "description": "Provides a React component to enable multiple styles for a polyline in a react-leaflet map, based on Leaflet.MultiOptionsPolyline from hgoebl(https://github.com/hgoebl/Leaflet.MultiOptionsPolyline).",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development"
   },
   "repository": {
     "type": "git",
@@ -24,9 +25,24 @@
   },
   "homepage": "https://github.com/dudesuh/react-leaflet-multi-options-polyline#readme",
   "dependencies": {
+    "geolib": "^2.0.24",
     "leaflet": "^1.3.4",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
+    "react-bootstrap": "^0.32.3",
+    "react-dom": "^16.4.2",
     "react-leaflet": "^2.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.0",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.6"
   }
 }

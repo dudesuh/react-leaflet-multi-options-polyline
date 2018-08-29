@@ -1,0 +1,3 @@
+import ReactLeafletMultiOptionsPolyline from './src/ReactLeafletMultiOptionsPolyline'
+
+export default ReactLeafletMultiOptionsPolyline
