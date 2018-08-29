@@ -1,6 +1,7 @@
 # react-leaflet-multi-options-polyline
 
 Provides a React component to enable multiple styles for a polyline in a [react-leaflet](https://react-leaflet.js.org) map.
+Based on [Leaflet.MultiOptionsPolyline](https://github.com/hgoebl/Leaflet.MultiOptionsPolyline) by hgoebl.
 
 ## Demos
 To see demos page run on terminal:
@@ -53,5 +54,3 @@ export default class DataMap extends React.Component {
   }
 }
 ```
-
-### Based on [Leaflet.MultiOptionsPolyline](https://github.com/hgoebl/Leaflet.MultiOptionsPolyline) by hgoebl.
