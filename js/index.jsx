@@ -70,7 +70,7 @@ export default class ReactLeafletMultiOptionsPolyline extends React.Component {
 
   getBounds () {
     const bounds = geolib.getBounds(this.props.positions)
-    return new L.LatLngBounds(new L.LatLng(bounds.minLat, bounds.minLng), new L.LatLng(bounds.maxLat, bounds.maxLng))
+    return new L.LatLngBounds(new L.LatLng(bounds.maxLat, bounds.minLng), new L.LatLng(bounds.minLat, bounds.maxLng))
   }
 
   render () {
