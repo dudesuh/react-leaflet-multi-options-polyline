@@ -1,6 +1,6 @@
 import React from 'react'
 import {Map, TileLayer} from 'react-leaflet'
-import ReactLeafletMultiOptionsPolyline from '../../src'
+import ReactLeafletMultiOptionsPolyline from '../../'
 
 export default class DataMap extends React.Component {
   constructor (props) {
