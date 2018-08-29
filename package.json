@@ -2,7 +2,7 @@
   "name": "react-leaflet-multi-options-polyline",
   "version": "1.0.4",
   "description": "Provides a React component to enable multiple styles for a polyline in a react-leaflet map, based on Leaflet.MultiOptionsPolyline from hgoebl(https://github.com/hgoebl/Leaflet.MultiOptionsPolyline).",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel js --presets @babel/preset-env --out-dir lib",
