@@ -2,16 +2,17 @@
 
 Provides a React component to enable multiple styles for a polyline in a [react-leaflet](https://react-leaflet.js.org) map.
 
-##Demos
+## Demos
 To see demos page run on terminal:
 
 `yarn install` and then `yarn start`
 
-##Usage
+## Usage
 ```javascript
 import React from 'react'
 import {Map, TileLayer} from 'react-leaflet'
 import ReactLeafletMultiOptionsPolyline from 'react-leaflet-multi-options-polyline'
+
 export default class DataMap extends React.Component {
   constructor (props) {
     super(props)
@@ -23,6 +24,7 @@ export default class DataMap extends React.Component {
     }
     this.state = {bounds: null}
   }
+  
   render () {
     return (
       <Map onMoveEnds={() => this.setState({bounds: null})} onZoomEnd={() => this.setState({bounds: null})} zoom={5} center={[38.729412, -9.139263]} maxZoom={18} bounds={this.state.bounds} id='mapTrips' style={{height: '40%'}} >
@@ -50,4 +52,4 @@ export default class DataMap extends React.Component {
 }
 ```
 
-##### Based on [Leaflet.MultiOptionsPolyline](https://github.com/hgoebl/Leaflet.MultiOptionsPolyline) by hgoebl.
+### Based on [Leaflet.MultiOptionsPolyline](https://github.com/hgoebl/Leaflet.MultiOptionsPolyline) by hgoebl.
