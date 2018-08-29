@@ -1,7 +1,6 @@
 import React from 'react'
 import {Map, TileLayer} from 'react-leaflet'
 import ReactLeafletMultiOptionsPolyline from '../../'
-import L from 'leaflet'
 
 export default class DataMap extends React.Component {
   constructor (props) {
@@ -11,21 +10,15 @@ export default class DataMap extends React.Component {
       this.multiOptionsPolyline = map
       this.setState({bounds: map.getBounds()})
     }
-    this.state = {bounds: L.latLngBounds(new L.LatLng(null, null), new L.LatLng(null, null))}
+    this.state = {bounds: undefined}
   }
 
   render () {
     return (
-      <Map onMoveend={() => this.setState({bounds: null})}
-        onZoomend={() => this.setState({bounds: null})}
-        zoom={5}
-        center={[38.729412, -9.139263]}
-        maxZoom={18}
+      <Map
         bounds={this.state.bounds}
-        id='mapTrips'
         style={{height: '40%'}} >
         <TileLayer
-          maxZoom={18}
           attribution={'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
           '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
           'Imagery © <a href="http://mapbox.com">Mapbox</a>'}
