@@ -1,8 +1,8 @@
 import React from 'react'
 import {render} from 'react-dom'
 import DataMap from './DataMap'
-import hallenbad from './data/hallenbad.json'
-import hochries from './data/hochries.json'
+import hallenbad from './assets/hallenbad.json'
+import hochries from './assets/hochries.json'
 import {PageHeader, Grid, Row, Col} from 'react-bootstrap'
 import L from 'leaflet'
 
