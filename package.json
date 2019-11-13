@@ -28,11 +28,13 @@
   "dependencies": {
     "geolib": "^3.1.0",
     "leaflet": "^1.5.1",
+    "mixin-deep": "^2.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-bootstrap": "^0.33.0",
     "react-dom": "^16.11.0",
-    "react-leaflet": "^2.5.0"
+    "react-leaflet": "^2.5.0",
+    "set-value": "^3.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.0",
