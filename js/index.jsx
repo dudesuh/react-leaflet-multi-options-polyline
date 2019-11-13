@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {FeatureGroup, Polyline} from 'react-leaflet'
 import L from 'leaflet'
-import geolib from 'geolib'
+import {getBounds} from 'geolib'
 
 export default class ReactLeafletMultiOptionsPolyline extends React.Component {
   constructor (props) {
@@ -69,7 +69,7 @@ export default class ReactLeafletMultiOptionsPolyline extends React.Component {
   }
 
   getBounds () {
-    const bounds = geolib.getBounds(this.props.positions)
+    const bounds = getBounds(this.props.positions)
     return new L.LatLngBounds(new L.LatLng(bounds.maxLat, bounds.minLng), new L.LatLng(bounds.minLat, bounds.maxLng))
   }
 
