@@ -35,7 +35,7 @@
     "react-bootstrap": "^0.33.0",
     "react-dom": "^16.11.0",
     "react-leaflet": "^2.5.0",
-    "serialize-javascript": "2.1.1",
+    "serialize-javascript": "3.1.0",
     "set-value": "^3.0.1"
   },
   "devDependencies": {
