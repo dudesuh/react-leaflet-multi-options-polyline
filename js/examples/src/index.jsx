@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import DataMap from './DataMap';
 import hallenbad from './assets/hallenbad.json';
 import hochries from './assets/hochries.json';
-import { PageHeader, Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import L from 'leaflet';
 
 var lastSlot = -1;

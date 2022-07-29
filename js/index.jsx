@@ -4,7 +4,7 @@ import { FeatureGroup } from 'react-leaflet';
 import { Polyline } from 'react-leaflet';
 import L from 'leaflet';
 import { getBounds } from 'geolib';
-import { useMap } from 'react-leaflet/hooks';
+import { useMap } from 'react-leaflet';
 
 export default function ReactLeafletMultiOptionsPolyline(props) {
     const mapPositions = () => {
@@ -55,7 +55,7 @@ export default function ReactLeafletMultiOptionsPolyline(props) {
         lines[currentLineIdx].push(currentLine[currentLineIdx]);
         return lines;
     };
-    const [lines, setLines] = useState(mapPositions());
+    const [lines, setLines] = useState([]);
     const map = useMap();
 
     useEffect(() => {

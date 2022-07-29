@@ -1,9 +1,10 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
   template: path.join(__dirname, 'js/examples/src/index.html'),
   filename: './index.html'
-})
+});
+
 module.exports = {
   entry: path.join(__dirname, 'js/examples/src/index.jsx'),
   module: {
@@ -26,4 +27,4 @@ module.exports = {
   devServer: {
     port: 3001
   }
-}
+};

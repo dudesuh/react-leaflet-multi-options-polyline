@@ -1,1 +1,8 @@
 js
+.gitignore
+.prettierignore
+.prettierrc.json
+index.jsx
+webpack.config.js
+yarn.lock
+dist/examples
