@@ -66,7 +66,7 @@ export default function ReactLeafletMultiOptionsPolyline(props) {
                 new L.LatLng(bounds.minLat, bounds.maxLng)
             )
         );
-    });
+    }, []);
 
     useEffect(() => {
         setLines(mapPositions());
